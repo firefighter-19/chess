@@ -46,5 +46,4 @@ class Knight {
 		return sortMoves(board, coordinates, this.color);
 	}
 }
-
 export { Knight }
