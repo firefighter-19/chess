@@ -2,7 +2,7 @@ class Pawn {
 	constructor(color) {
 		this.notMoved = true;
 		this.color = color;
-		let name = 'Pawn';
+		let name = 'pawn';
 		this.name = name;
 	}
 	getMoves(board, start) {

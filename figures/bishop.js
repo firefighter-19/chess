@@ -3,7 +3,7 @@ import { sortMoves } from './sortMoves.js'
 class Bishop {
 	constructor(color) {
 		this.color = color;
-		let name = 'Rook';
+		let name = 'bishop';
 		this.name = name;
 	}
 	getMoves(board, start) {
@@ -17,7 +17,7 @@ class Bishop {
 				{ y: start.y - i, x: start.x + i }
 			)
 		}
-		return sortMoves(board, coordinates);
+		return sortMoves(board, coordinates, this.color);
 	}
 }
 

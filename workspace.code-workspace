@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\Документы\\thinknetica\\FullStackJS dev\\thinknetica-ff19"
+		},
+		{
+			"path": "..\\..\\..\\Документы\\Javascript для детей"
+		},
+		{
+			"path": "..\\..\\..\\Документы\\LearnJavaScriptRu"
+		},
+		{
+			"path": "..\\..\\..\\Документы\\GitHub\\crazy-panda"
+		},
+		{
+			"path": "..\\..\\..\\Документы\\GitHub\\react-js-tic-tac-toe"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "My apps"
+	}
+}

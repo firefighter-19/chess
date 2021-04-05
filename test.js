@@ -1,4 +1,11 @@
-let arr = [{ x: 1, y: 2 }, { x: 2, y: 3 }];
 
-let newArr = arr.map(el => el.y)
-console.log(newArr)
+// for (let i = 0; i < arr.length; i++) {
+// 	if (i !== arr[i]) {
+// 		console.log(false)
+// 	}
+// 	console.log(true);
+// }
+
+let arr = [[1,2,3]]
+
+console.log (arr[0][0 + 2])

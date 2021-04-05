@@ -16,10 +16,52 @@
 .chess__row {
 	position: relative;
 }
-.active{
-	background-color: purple;
+.chess__cell__white{
+	width: 60px;
+	height: 60px;
+	background-color: rgb(233, 218, 190);
 }
-.black {
-	background-color: rgb(141, 111, 27);
+.chess__cell__black {
+	width: 60px;
+	height: 60px;
+	background-color : rgb(141, 111, 27);
+}
+.active {
+	background-color: rgb(23, 95, 20);
 }
 
+.pawn {
+	background-image: url('./source/blackPawn.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.rook {
+	background-image: url('./source/blackRook.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.knight {
+	background-image: url('./source/blackKnight.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.queen {
+	background-image: url('./source/blackQueen.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.bishop {
+	background-image: url('./source/blackBishop.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.king {
+	background-image: url('./source/blackKing.png');
+	background-position: center;
+	background-size: cover;
+}

@@ -3,7 +3,7 @@ import { sortMoves } from './sortMoves.js'
 class Queen {
 	constructor(color) {
 		this.color = color;
-		let name = 'Queen';
+		let name = 'queen';
 		this.name = name;
 	}
 	getMoves(board, start) {
@@ -22,7 +22,7 @@ class Queen {
 				{ y: start.y, x: start.x - i }
 			)
 		}
-		return sortMoves(board, coordinates);
+		return sortMoves(board, coordinates, this.color);
 	}
 }
 

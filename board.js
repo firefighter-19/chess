@@ -19,7 +19,6 @@ class Board {
 			[new Pawn('black'), new Pawn('black'), new Pawn('black'), new Pawn('black'), new Pawn('black'), new Pawn('black'), new Pawn('black'), new Pawn('black')],
 			[new Rook('black'), new Knight('black'), new Bishop('black'), new Queen('black'), new King('black'), new Bishop('black'), new Knight('black'), new Rook('black')]
 		];
-		this.cells = [];
 	}
 	createBoard() {
 		for (let y = 0; y < this.field.length; y++) {
@@ -30,21 +29,14 @@ class Board {
 			for (let x = 0; x < this.field[y].length; x++) {
 				let cell = document.createElement('td');
 				row.append(cell)
-				cell.classList.add('chess__cell')
-				cell.style.backgroundColor = 'rgb(233, 218, 190)';
+				cell.classList.add('chess__cell__white')
 				if (y % 2 !== 0) {
 					if (x % 2 === 0) {
-						cell.style =
-							`background-color : rgb(141, 111, 27);
-					  width: 60px;
-					 height: 60px;`
+						cell.classList.add('chess__cell__black');
 					}
 				} else {
 					if (x % 2 !== 0) {
-						cell.style =
-							`background-color : rgb(141, 111, 27);
-					  width: 60px;
-					 height: 60px;`
+						cell.classList.add('chess__cell__black');
 					}
 				}
 				cell.y = y;
@@ -54,15 +46,53 @@ class Board {
 				} else {
 					cell.position = null;
 				}
-				this.cells.push(cell)
 			}
 		}
 	}
-	// drawFigures() {
-	// 	let figure = document.createElement('img');
-	// 	figure.setAttribute('src', './source/rook.png')
+	drawFigures() {
+		for (let i = 0; i < this.table.rows.length; i++) {
+			let rows = Array.from(this.table.rows[i].cells)
+			if (i === 6) {
+				for (let key of rows) {
+					key.classList.add('pawn')
+				}
+			}
+			if (i === 7) {
+				for (let key in rows) {
+					// console.log(rows[key])
+					// console.log(key)
+					// Оставить так или переписать под switch
+					if (key === '0') {
+						rows[key].classList.add('rook');
 
-	// }
+					}
+					if (key === '7') {
+						rows[key].classList.add('rook');
+
+					}
+					if (key === '1') {
+						rows[key].classList.add('knight');
+					}
+					if (key === '6') {
+						rows[key].classList.add('knight');
+					}
+					if (key === '2') {
+						rows[key].classList.add('bishop');
+
+					}
+					if (key === '5') {
+						rows[key].classList.add('bishop');
+					}
+					if (key === '3') {
+						rows[key].classList.add('king');
+					}
+					if (key === '4') {
+						rows[key].classList.add('queen');
+					}
+				}
+			}
+		}
+	}
 }
 
 export { Board }
