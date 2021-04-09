@@ -36,32 +36,59 @@
 	background-size: cover;
 }
 
+.white__pawn {
+	background-image: url('./source/whitePawn.png');
+	background-position: center;
+	background-size: cover;
+}
+
 .rook {
 	background-image: url('./source/blackRook.png');
 	background-position: center;
 	background-size: cover;
 }
-
+.white__rook {
+	background-image: url('./source/whiteRook.png');
+	background-position: center;
+	background-size: cover;
+}
 .knight {
 	background-image: url('./source/blackKnight.png');
 	background-position: center;
 	background-size: cover;
 }
-
+.white__knight {
+	background-image: url('./source/whiteKnight.png');
+	background-position: center;
+	background-size: cover;
+}
 .queen {
 	background-image: url('./source/blackQueen.png');
 	background-position: center;
 	background-size: cover;
 }
-
+.white__queen {
+	background-image: url('./source/whiteQueen.png');
+	background-position: center;
+	background-size: cover;
+}
 .bishop {
 	background-image: url('./source/blackBishop.png');
 	background-position: center;
 	background-size: cover;
 }
-
+.white__bishop {
+	background-image: url('./source/whiteBishop.png');
+	background-position: center;
+	background-size: cover;
+}
 .king {
 	background-image: url('./source/blackKing.png');
+	background-position: center;
+	background-size: cover;
+}
+.white__king {
+	background-image: url('./source/whiteKing.png');
 	background-position: center;
 	background-size: cover;
 }

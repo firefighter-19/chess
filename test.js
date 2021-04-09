@@ -1,11 +1,5 @@
+let arr = [1, 2, 3, 4, 5];
 
-// for (let i = 0; i < arr.length; i++) {
-// 	if (i !== arr[i]) {
-// 		console.log(false)
-// 	}
-// 	console.log(true);
-// }
+let arr2 = arr.slice(0, 2);
 
-let arr = [[1,2,3]]
-
-console.log (arr[0][0 + 2])
+console.log(arr2)
